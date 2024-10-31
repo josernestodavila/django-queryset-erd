@@ -1,10 +1,5 @@
-import importlib.metadata
-
 from .generator import generate_erd_from_queryset
 
+__version__ = "2024.10.1"
 
-try:
-    __version__ = importlib.metadata.version(__name__)
-except importlib.metadata.PackageNotFoundError:
-    __version__ = "unknown"
-
+__all__ = ["generate_erd_from_queryset"]
