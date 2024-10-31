@@ -6,9 +6,6 @@ on:
       - "v*" # Trigger on push of version tags (e.g., v1.0.0)
   pull_request:
     branches: [main] # Trigger on pull requests to main branch
-  paths:
-    - django_queryset_erd/** # Trigger on changes to the package code
-    - setup.cfg # Trigger on changes to the package metadata
 
 jobs:
   test:
